@@ -1,0 +1,15 @@
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\bin\Debug\TravelAgentWeb.deps.json
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\bin\Debug\TravelAgentWeb.runtimeconfig.json
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\bin\Debug\TravelAgentWeb.runtimeconfig.dev.json
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\bin\Debug\appsettings.Development.json
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\bin\Debug\appsettings.json
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\bin\Debug\TravelAgentWeb.exe
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\bin\Debug\TravelAgentWeb.dll
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\bin\Debug\Microsoft.OpenApi.dll
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\bin\Debug\TravelAgentWeb.pdb
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\SIMPLEX644\source\repos\AirlineWeb\obj\Debug\docker-compose.dcproj.CopyComplete

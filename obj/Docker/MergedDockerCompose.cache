@@ -1,0 +1,58 @@
+name: dockercompose11484646887031674636
+services:
+  rabbitmq:
+    hostname: rabbit1
+    image: rabbitmq:3-management
+    labels:
+      NAME: some-rabbit
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 15472
+      published: "15672"
+      protocol: tcp
+    - mode: ingress
+      target: 5672
+      published: "5672"
+      protocol: tcp
+  sqlserver:
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      SA_PASSWORD: pa55w0rd!
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "1433"
+      protocol: tcp
+  travelagentweb:
+    build:
+      context: C:\Users\SIMPLEX644\source\repos\AirlineWeb
+      dockerfile: TravelAgentWeb\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: travelagentweb
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\SIMPLEX644\AppData\Roaming/ASP.NET/Https
+      target: C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https
+      read_only: true
+      bind:
+        create_host_path: true
+networks:
+  default:
+    name: dockercompose11484646887031674636_default
