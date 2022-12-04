@@ -6361,11 +6361,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SIMPLEX644\\source\\repos\\AirlineWeb\\AirlineWeb\\AirlineWeb.csproj",
+      "projectUniqueName": "C:\\Users\\SIMPLEX644\\Desktop\\apps\\dotnet\\AirlineWeb\\AirlineWeb\\AirlineWeb.csproj",
       "projectName": "AirlineWeb",
-      "projectPath": "C:\\Users\\SIMPLEX644\\source\\repos\\AirlineWeb\\AirlineWeb\\AirlineWeb.csproj",
+      "projectPath": "C:\\Users\\SIMPLEX644\\Desktop\\apps\\dotnet\\AirlineWeb\\AirlineWeb\\AirlineWeb.csproj",
       "packagesPath": "C:\\Users\\SIMPLEX644\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SIMPLEX644\\source\\repos\\AirlineWeb\\AirlineWeb\\obj\\",
+      "outputPath": "C:\\Users\\SIMPLEX644\\Desktop\\apps\\dotnet\\AirlineWeb\\AirlineWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

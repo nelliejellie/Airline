@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R2bUGhTYajqG/aX5uL5WVpS1nDU9zUhDdnJHROay25A22y0Jtmn9gR3rBqzqkOpfyAGLpEdpRvXpl3dwukXcLQ==",
+  "dgSpecHash": "2zmNw2tTU4k7QwyxupONPWMzmyoENkc9qFeMsPVzc5qWdmX9i09SOEL0GNtYtGiiHNew9uc1eDW8i3kKedkhvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SIMPLEX644\\source\\repos\\AirlineWeb\\AirlineWeb\\AirlineWeb.csproj",
+  "projectFilePath": "C:\\Users\\SIMPLEX644\\Desktop\\apps\\dotnet\\AirlineWeb\\AirlineWeb\\AirlineWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SIMPLEX644\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\SIMPLEX644\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

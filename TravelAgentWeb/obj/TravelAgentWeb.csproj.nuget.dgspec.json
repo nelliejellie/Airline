@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SIMPLEX644\\source\\repos\\AirlineWeb\\TravelAgentWeb\\TravelAgentWeb.csproj": {}
+    "C:\\Users\\SIMPLEX644\\Desktop\\apps\\dotnet\\AirlineWeb\\TravelAgentWeb\\TravelAgentWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SIMPLEX644\\source\\repos\\AirlineWeb\\TravelAgentWeb\\TravelAgentWeb.csproj": {
+    "C:\\Users\\SIMPLEX644\\Desktop\\apps\\dotnet\\AirlineWeb\\TravelAgentWeb\\TravelAgentWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SIMPLEX644\\source\\repos\\AirlineWeb\\TravelAgentWeb\\TravelAgentWeb.csproj",
+        "projectUniqueName": "C:\\Users\\SIMPLEX644\\Desktop\\apps\\dotnet\\AirlineWeb\\TravelAgentWeb\\TravelAgentWeb.csproj",
         "projectName": "TravelAgentWeb",
-        "projectPath": "C:\\Users\\SIMPLEX644\\source\\repos\\AirlineWeb\\TravelAgentWeb\\TravelAgentWeb.csproj",
+        "projectPath": "C:\\Users\\SIMPLEX644\\Desktop\\apps\\dotnet\\AirlineWeb\\TravelAgentWeb\\TravelAgentWeb.csproj",
         "packagesPath": "C:\\Users\\SIMPLEX644\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SIMPLEX644\\source\\repos\\AirlineWeb\\TravelAgentWeb\\obj\\",
+        "outputPath": "C:\\Users\\SIMPLEX644\\Desktop\\apps\\dotnet\\AirlineWeb\\TravelAgentWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
