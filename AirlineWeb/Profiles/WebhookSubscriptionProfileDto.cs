@@ -9,7 +9,7 @@ namespace AirlineWeb.Profiles
        
         public WebhookSubscriptionProfileDto()
         {
-            CreateMap<WebHookSubscriptionCreateDto, WebhookSubscription>();
+            CreateMap<WebHookSubscriptionCreateDto, WebhookSubscription>().ReverseMap();
             CreateMap<WebhookSubscription, WebhookSubscriptionReadDto>();
         }
     }

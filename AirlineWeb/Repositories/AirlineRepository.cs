@@ -2,7 +2,10 @@
 using AirlineWeb.DTOs;
 using AirlineWeb.Entity;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace AirlineWeb.Repositories
 {
@@ -14,18 +17,22 @@ namespace AirlineWeb.Repositories
             _airlineDbContext = airlineDbContext;
         }
 
-        public bool Create(WebHookSubscriptionCreateDto webhookSubscription)
+        public async Task<bool> Create(WebhookSubscription webhookSubscription)
         {
-            var subscription = _airlineDbContext.WebhookSubscriptions.FirstOrDefault(x => x.WebhookUri == webhookSubscription.WebhookUri);
+            var sub = await _airlineDbContext.WebhookSubscriptions.AddAsync(webhookSubscription);
+            var changes = await _airlineDbContext.SaveChangesAsync();
+            return changes > 0;
+        }
 
-            if(subscription == null)
+        public async Task<WebhookSubscription> GetWebhookByCondition(Expression<Func<WebhookSubscription, bool>> expression)
+        {
+            var uri = _airlineDbContext.WebhookSubscriptions.FirstOrDefault(expression);
+            if(uri == null)
             {
-                return true;
+                return null;
             }
-            else
-            {
-                return false;
-            }
+            return uri;
+
         }
     }
 }

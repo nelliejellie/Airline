@@ -1,4 +1,5 @@
 using AirlineWeb.Data;
+using AirlineWeb.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,10 +32,17 @@ namespace AirlineWeb
 
             services.AddControllers();
             services.AddDbContext<AirlineDbContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("AirlineWeb")));
+            services.AddScoped<AirlineRepository>();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AirlineWeb", Version = "v1" });
             });
+
+            services.AddCors(options => options.AddDefaultPolicy(
+                    builder => builder.AllowAnyOrigin()
+                ));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,6 +66,7 @@ namespace AirlineWeb
             {
                 endpoints.MapControllers();
             });
+            app.UseCors();
         }
     }
 }
