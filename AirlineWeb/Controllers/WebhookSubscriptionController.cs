@@ -23,7 +23,7 @@ namespace AirlineWeb.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet("{secret}", Name ="GetSubscriptionBySecret")]
+        [HttpGet(Name ="GetSubscriptionBySecret")]
         public ActionResult<WebhookSubscriptionReadDto> GetSubscriptionBySecret(string secret)
         {
             var subscription = _airlineRepository.GetWebhookByCondition(x => x.Secret == secret);

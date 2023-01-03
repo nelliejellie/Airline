@@ -1,4 +1,4 @@
-name: dockercompose11484646887031674636
+name: dockercompose3947254995728019566
 services:
   rabbitmq:
     hostname: rabbit1
@@ -31,7 +31,7 @@ services:
       protocol: tcp
   travelagentweb:
     build:
-      context: C:\Users\SIMPLEX644\source\repos\AirlineWeb
+      context: C:\Users\SIMPLEX644\Desktop\apps\dotnet\AirlineWeb
       dockerfile: TravelAgentWeb\Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
@@ -55,4 +55,4 @@ services:
         create_host_path: true
 networks:
   default:
-    name: dockercompose11484646887031674636_default
+    name: dockercompose3947254995728019566_default

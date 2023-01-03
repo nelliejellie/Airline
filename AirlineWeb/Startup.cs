@@ -1,4 +1,5 @@
 using AirlineWeb.Data;
+using AirlineWeb.Profiles;
 using AirlineWeb.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,10 +34,12 @@ namespace AirlineWeb
             services.AddControllers();
             services.AddDbContext<AirlineDbContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("AirlineWeb")));
             services.AddScoped<AirlineRepository>();
+            services.AddScoped<FlightsRepository>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AirlineWeb", Version = "v1" });
+                c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
             });
 
             services.AddCors(options => options.AddDefaultPolicy(
@@ -52,10 +55,15 @@ namespace AirlineWeb
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AirlineWeb v1"));
+                app.UseSwaggerUI(c => {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "AirlineWeb v1");
+                    
+                });
             }
 
             app.UseHttpsRedirection();
+
+            app.UseStaticFiles();
 
             app.UseRouting();
 
